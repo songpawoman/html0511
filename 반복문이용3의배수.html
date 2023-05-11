@@ -33,8 +33,9 @@ function printNum(){
 	for(let i=1; i<=100; i++){
 		//삼항연산자에게 i가 3의 배수인지 물어봐서 맞다면 별, 아니라면 str + i
 		let n=(i%3==0)? "★": str + i;
+		
+		str =n+", \n"; //div 내에서의 줄바꿈(일반적인 프로그래밍 언어에서도 마찬가지)
 
-		str =n+"\n"; //div 내에서의 줄바꿈(일반적인 프로그래밍 언어에서도 마찬가지)
 		console.log(str);
 
 		document.querySelector("div").innerText=str;
