@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>반복문이용3의배수</title>
+<script>
+//문서내의 div요소안에 1~100사이 문자열을 동적으로 출력...
+function printNum(){
+	for(let i=1; i<=100; i++){
+		document.querySelector("div").innerText=i;
+	}
+}
+</script>
+</head>
+<body>
+	<button onClick="printNum()">수출력</button>
+	<div>숫자가 출력될 예정...</div>
+
+</body>
+</html>
